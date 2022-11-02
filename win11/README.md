@@ -1,3 +1,8 @@
+Install ohmyposh.dev ( ref https://ohmyposh.dev/docs/installation/windows )
+```powershell
+winget install JanDeDobbeleer.OhMyPosh -s winget
+```
+
 Have to elevate the permissions to get started.
 
 Start a admin mode powershell.
