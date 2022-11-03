@@ -11,6 +11,10 @@ if (-not(Test-Path -Path 'c:\k8s-tools\prompt.json')) {
 }
 cat k-alias.ps1 | Out-String | Invoke-Expression
 oh-my-posh init pwsh --config 'c:\k8s-tools\prompt.json' | Invoke-Expression
+
+# Set vscode as default editor for kubectl edit
+$env:KUBE_EDITOR="code --wait"
+
 # Set Default location
 Set-Location $MyStartFolder
 
