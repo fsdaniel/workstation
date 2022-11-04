@@ -3,6 +3,8 @@ $MyStartFolder = 'c:\k8s-tools\'
 if (-not( Test-Path -Path $MyStartFolder)) {
     mkdir c:\k8s-tools\
 }    
+# Set Default location
+Set-Location $MyStartFolder
 if (-not(Test-Path -Path 'c:\k8s-tools\k-alias.ps1')) {
     curl https://raw.githubusercontent.com/fsdaniel/workstation/main/win11/k-alias.ps1 -o c:\k8s-tools\k-alias.ps1
 }
@@ -14,9 +16,6 @@ oh-my-posh init pwsh --config 'c:\k8s-tools\prompt.json' | Invoke-Expression
 
 # Set vscode as default editor for kubectl edit
 $env:KUBE_EDITOR="code --wait"
-
-# Set Default location
-Set-Location $MyStartFolder
 
 # Set alias commands
 Set-Alias -Name k -Value kubectl
