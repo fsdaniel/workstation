@@ -1,4 +1,5 @@
-$Env:Path += ';%USERPROFILE%\.krew\bin'
+$Env:Path += ';C:\Users\danie\.krew\bin'
+$Env:Path += ';C:\ProgramData\chocolatey\lib\kubernetes-cli\tools\kubernetes\client\bin'
 $MyStartFolder = 'c:\k8s-tools\'
 if (-not( Test-Path -Path $MyStartFolder)) {
     mkdir c:\k8s-tools\
