@@ -17,3 +17,20 @@ ise $profile
 
 Copy the content in from `https://github.com/fsdaniel/workstation/blob/main/win11/profile.ps1`
 Hit save.
+
+in powershell(admin) run
+```powershell
+oh-my-posh font install
+```
+and install the JetBrainsMono font
+
+Terminal settings
+```
+        "defaults": 
+        {
+            "font": 
+            {
+                "face": "JetBrainsMono NF"
+            }
+        },
+```
