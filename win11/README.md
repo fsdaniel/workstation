@@ -18,11 +18,9 @@ ise $profile
 Copy the content in from `https://github.com/fsdaniel/workstation/blob/main/win11/profile.ps1`
 Hit save.
 
-in powershell(admin) run
-```powershell
-oh-my-posh font install
-```
-and install the JetBrainsMono font
+Install the Meslo font
+https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Meslo.zip
+
 
 Terminal settings
 ```
