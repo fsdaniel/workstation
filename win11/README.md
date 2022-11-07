@@ -30,7 +30,7 @@ Terminal settings
         {
             "font": 
             {
-                "face": "JetBrainsMono NF"
+                "face": "MesloLGM NF"
             }
         },
 ```
