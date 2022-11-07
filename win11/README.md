@@ -40,4 +40,5 @@ krew plugins
 kubectl krew install neat
 kubectl krew install df-pv
 kubectl krew install oomd
+kubectl krew install node-shell
 ```
