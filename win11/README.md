@@ -34,3 +34,10 @@ Terminal settings
             }
         },
 ```
+
+krew plugins
+```bash
+kubectl krew install neat
+kubectl krew install df-pv
+kubectl krew install oomd
+```
