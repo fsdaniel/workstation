@@ -1,0 +1,17 @@
+
+if [[ -x /usr/bin/keychain && -f ~/KEY ]]; then
+    eval "$(keychain --eval --agents ssh --quiet KEY)"
+fi
+
+
+source ~/zsh-plugins//kube-ps1.sh
+PROMPT='$(kube_ps1)'$PROMPT
+source <(kubectl completion zsh)
+
+alias k=kubectl
+
+complete -o default -F __start_kubectl k
+alias kcn='k config set-context --current --namespace'
+alias kcuc='k config use-context'
+
+export KUBE_EDITOR=nano
