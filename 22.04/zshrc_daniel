@@ -4,7 +4,7 @@ if [[ -x /usr/bin/keychain && -f ~/KEY ]]; then
 fi
 
 
-source ~/zsh-plugins//kube-ps1.sh
+source ~/zsh-plugins/kube-ps1.sh
 PROMPT='$(kube_ps1)'$PROMPT
 source <(kubectl completion zsh)
 
