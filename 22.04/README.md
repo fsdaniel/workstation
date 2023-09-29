@@ -39,3 +39,17 @@ echo "source ~./.zshrc_daniel" >> ~/.zshrc
 git config --global user.email "daniel.koopmans@true.nl"
 git config --global user.name "Daniel Koopmans"
 ```
+
+## Setup kubeswitch
+
+ read up on `https://github.com/danielfoehrKn/kubeswitch/blob/master/docs/stores/rancher/rancher.md`
+ install using `https://github.com/danielfoehrKn/kubeswitch/blob/master/docs/installation.md#option-2---github-releases`
+
+Get https://github.com/danielfoehrKn/kubeswitch/blob/master/hack/switch/switch.sh
+into `/home/daniel/bin/switch.sh`
+
+```bash
+echo "source /home/daniel/bin/switch.sh" >> ~./.zshrc_daniel
+echo "alias kx='switch'" >> ~./.zshrc_daniel
+```
+
